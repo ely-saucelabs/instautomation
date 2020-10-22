@@ -11,16 +11,15 @@
 ## Setup
 
 ### Local Setup
-1. Clone repository: `git clone ...`
-1. cd `repository`
+1. Clone repository: `https://github.com/ely-saucelabs/instautomation.git`
+1. cd `instautomation`
 1. Check you have all your dependencies installed:
    * `ruby -v`
    * `rails -v`
    * `node -v`
    * `yarn -v`
    * `sqlite3 --version`
-1. `yarn install --check-files` 
-2. `rails db:migrate`
+1. `bin/setup`
 3. `rails test -v`
 4. `rails server`
 5. Open: http://127.0.0.1:3000
