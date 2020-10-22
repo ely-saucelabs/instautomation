@@ -1,0 +1,8 @@
+<div class="content">
+    <div class="row">
+        <%= image_tag(@photo.picture_url, width: '50%') if @photo.picture.present? %>
+    </div>
+    <div class="row">
+        <p><%= @photo.description %></p>
+    </div>
+</div>

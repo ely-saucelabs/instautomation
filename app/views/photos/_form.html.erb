@@ -1,0 +1,26 @@
+<%= form_with(model: @photo, local: true) do |form| %>
+    <% if idea.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(idea.errors.count, "error") %> prohibited this photo from being saved:</h2>
+
+          <ul>
+            <% idea.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="row col-md-6">
+      <div class="form-group row">
+        <label for="<%= :description %>">Description</label>
+        <%= form.text_area :description, id: :idea_description, :class => 'form-control' %>
+      </div>
+
+      <div class="form-group row">
+        <label for="<%= :picture %>">Picture</label>
+        <%= form.file_field :picture, id: :idea_picture, :class => 'form-control' %>
+      </div>
+    </div>
+    <button class="btn btn-primary">Add<i class="fa fa-lightbulb-o"></i></button>
+<% end %>
