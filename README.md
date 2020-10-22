@@ -19,11 +19,12 @@
    * `node -v`
    * `yarn -v`
    * `sqlite3 --version`
-1. `bin/setup`
-3. `rails test -v`
-4. `rails server`
-5. Open: http://127.0.0.1:3000
-6. The app is running :tada:
+1. Run the setup script: `bin/setup`
+1. Run Tests: `rails test -v`
+1. Run System Tests: `rails test:system -v`
+1. Start the server: `rails server`
+1. Open: http://127.0.0.1:3000
+1. The app is running :tada:
 
 ## How to run tests?
 
