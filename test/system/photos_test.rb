@@ -18,4 +18,18 @@ class PhotosTest < ApplicationSystemTestCase
 
     assert_selector "p", text: "Earthrise"
   end
+
+  test "can see photos in the index" do 
+    visit photos_url
+
+    click_on "New Photo"
+    fill_in "photo[description]", with: "Earthrise"
+    attach_file "photo[picture]", file_fixture('picture.png')
+    click_on "Add"
+
+    visit photos_url
+
+    assert_selector "p", text: "Earthrise"
+  end
+
 end
