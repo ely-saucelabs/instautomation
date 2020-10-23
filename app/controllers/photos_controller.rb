@@ -2,6 +2,7 @@ class PhotosController < ApplicationController
   before_action :set_photo, only: :show
 
   def index
+    @photos = Photo.all
   end
 
   def new 
