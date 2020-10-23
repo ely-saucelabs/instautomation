@@ -1,3 +1,17 @@
 <div class="content">
     <a class="btn btn-success" href="<%= new_photo_path %>">New Photo 📷</a>
+
+    <div class="content">
+        <% @photos.in_groups_of(4) do |group| %>
+            <div class="row">
+              <% group.compact.each do |photo| %>
+                  <div class="col-md-3">
+                    <span class="thumbnail">
+                    <%= link_to (image_tag photo.picture_url, class:"thumbnail" if photo.picture.present?), photo %>
+                    <p><%= photo.description %></p>
+                  </div>
+              <% end %>
+            </div>
+        <% end %>
+    <div>
 </div>
