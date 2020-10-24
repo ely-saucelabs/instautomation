@@ -2,6 +2,7 @@
 
 ## Requirements 
 
+You can see how to check these under "Local Setup" point 4.
 * Ruby `2.7.2`
 * Rails `6.0.3.4`
 * Node.js  `12.x`
@@ -13,9 +14,9 @@
 ### Local Setup
 
 1. Fork this repository
-1. Clone repository: `https://github.com/ely-saucelabs/instautomation.git`
-1. cd `instautomation`
-1. Check you have all your dependencies installed:
+1. Clone that repository from your own account: `https://github.com/[your-username]/instautomation.git`
+1. Open the terminal/command line, then type `cd instautomation`
+1. Check whether you have all your dependencies installed:
    * `ruby -v`
    * `rails -v`
    * `node -v`
@@ -25,12 +26,12 @@
 1. Run Tests: `rails test -v`
 1. Run System Tests: `rails test:system -v`
 1. Start the server: `rails server`
-1. Open: http://127.0.0.1:3000
-1. The app is running :tada:
+1. Open in your browser: http://127.0.0.1:3000
+1. You should see "Instautomation website" showing up in the browser :tada:
 
 ## How to run tests?
 
-`rails test` or `rails test -v`
+In the terminal, type `rails test` or `rails test -v`
 
 Or run an individual test with `rails test path/to/individual_test_rb` or `rails test -v path/to/individual_test_rb`
 
