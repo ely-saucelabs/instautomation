@@ -14,7 +14,10 @@ You can see how to check these under "Local Setup" point 4.
 ### Local Setup
 
 1. Fork this repository
+1. In the menu on top, click on "Code" (first on the left): find `.github/workflows`, click on it and then click on `ci-setup.yml`, copy the content
 1. In the menu on top, click on "Actions" (third from the left): You will see a message and need to click on the green button "I understand my workflows, go ahead and enable them"
+1. Click on the blue button "New Workflow" and on the next page, click on "set up a workflow yourself ->", then chose a name for the file and replace the content of the file with the copied content from point 2, then click on the green button "Start commit"
+1. Go back to "Actions" - you should see some results in the list there - congrats! Your CI pipeline is set up!!
 1. Clone that repository from your own account: `https://github.com/[your-username]/instautomation.git`
 1. Open the terminal/command line, then type `cd instautomation`
 1. Check whether you have all your dependencies installed:
