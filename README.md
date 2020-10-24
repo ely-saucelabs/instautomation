@@ -11,6 +11,8 @@
 ## Setup
 
 ### Local Setup
+
+1. Fork this repository
 1. Clone repository: `https://github.com/ely-saucelabs/instautomation.git`
 1. cd `instautomation`
 1. Check you have all your dependencies installed:
