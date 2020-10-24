@@ -14,6 +14,7 @@ You can see how to check these under "Local Setup" point 4.
 ### Local Setup
 
 1. Fork this repository
+1. In the menu on top, click on "Actions" (third from the left): You will see a message and need to click on the green button "I understand my workflows, go ahead and enable them"
 1. Clone that repository from your own account: `https://github.com/[your-username]/instautomation.git`
 1. Open the terminal/command line, then type `cd instautomation`
 1. Check whether you have all your dependencies installed:
